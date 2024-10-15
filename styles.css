@@ -1,6 +1,6 @@
-/* a {
+a {
     text-decoration: none;
-} */
+}
 a:hover {
     color: pink;
 }
@@ -18,7 +18,7 @@ a:active{
 }
 a:visited:hover{
     color: darksalmon;
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 a:visited:active{
     color: brown;
