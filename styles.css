@@ -22,6 +22,6 @@ a:visited:hover{
 a:visited:active{
     color: brown;
 }
-.underline:hover{
+.underline:active{
     text-decoration: underline;
 }
