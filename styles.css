@@ -16,3 +16,6 @@ a:visited{
 a:active{
     color: crimson;
 }
+a:visited:hover{
+    color: darksalmon;
+}
