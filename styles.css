@@ -10,3 +10,9 @@ h1.text-center{
 body {
     font-family: Afacad Flux;
 }
+a:visited{
+    color: darkgreen;
+}
+a:active{
+    color: crimson;
+}
