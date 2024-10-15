@@ -4,3 +4,6 @@ body a {
 body a:hover {
     color: pink;
 }
+.text-center{
+    text-align: center;
+}
