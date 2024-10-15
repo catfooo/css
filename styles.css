@@ -19,3 +19,6 @@ a:active{
 a:visited:hover{
     color: darksalmon;
 }
+a:visited:active{
+    color: brown;
+}
