@@ -18,8 +18,8 @@ a:active{
 }
 a:visited:hover{
     color: darksalmon;
+    text-decoration: underline;
 }
 a:visited:active{
     color: brown;
-    text-decoration: underline; !important
 }
