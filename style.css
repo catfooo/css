@@ -26,3 +26,6 @@ a:visited:active{
 .underline:active{
     text-decoration: underline;
 }
+p{
+    font-size: 3em;
+}
