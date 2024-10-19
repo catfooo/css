@@ -1,0 +1,46 @@
+<!--
+  safari doesnt support 3rd feature of this https://www.w3schools.com/cssref/css4_pr_accent-color.php
+  so tried to generate alternative by chatgpt
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Range Slider with Color Fill</title>
+    <style>
+        /* Base styling for the range input */
+        .custom-range {
+            -webkit-appearance: none; /* Override default styles */
+            width: 300px; /* Width of the track */
+            height: 15px; /* Height of the track */
+            background: #ddd; /* Default background color */
+            border-radius: 5px; /* Rounded corners */
+            outline: none; /* Remove outline */
+            transition: background 0.1s ease-in-out; /* Smooth transition for background */
+        }
+
+        /* Styles for the track background */
+        .custom-range {
+            background: linear-gradient(
+                to right,
+                rgb(100, 0, 100) 0%, 
+                rgb(100, 0, 100) calc(var(--value) * 2%), /* Fill color proportional to the slider value */
+                #ddd calc(var(--value) * 2%),
+                #ddd 100%
+            );
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+
+<h1>Dynamic Range Slider with Color Fill bcs safari doesnt support accent color for range input</h1>
+
+<input type="range" class="custom-range" id="vol" name="vol" min="0" max="50" value="0" style="--value: 0" oninput="this.style.setProperty('--value', this.value)">
+
+</body>
+</html>
