@@ -1,0 +1,58 @@
+<!-- (gpt) css dropdown example. we hover but cant click so leads to use js instead.. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Dropdown Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-toggle {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .dropdown-menu {
+            display: none; /* Hidden by default */
+            position: absolute;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            min-width: 160px;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block; /* Show the menu on hover */
+        }
+        .dropdown-item {
+            padding: 10px 15px;
+            color: #333;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-item:hover {
+            background-color: #f1f1f1; /* Change color on hover */
+        }
+    </style>
+</head>
+<body>
+
+<div class="dropdown">
+    <button class="dropdown-toggle">Dropdown</button>
+    <div class="dropdown-menu">
+        <a href="#" class="dropdown-item">Action 1</a>
+        <a href="#" class="dropdown-item">Action 2</a>
+        <a href="#" class="dropdown-item">Action 3</a>
+    </div>
+</div>
+
+</body>
+</html>
